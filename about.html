@@ -608,6 +608,9 @@
                                     <li><img src="images/logo/jmeter.svg" alt="jmeter"></li>
                                 </ul>
                             </div>
+                            <script type="text/javascript">
+                                setTimeout(logoslider(), 3000);
+                            </script>
                             <!-- client-list end-->
                         </div>
                         <div class="section-number"><span>0</span>5.</div>
@@ -648,14 +651,4 @@
 <script src="js/plugins.js"></script>
 <script src="js/scripts.js"></script>
 </body>
-<script type="text/javascript">
-    const root = document.documentElement;
-    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-    const marqueeContent = document.querySelector("ul.marquee-content");
-    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-    for (let i = 0; i < marqueeElementsDisplayed; i++) {
-        marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-    }
-</script>
-
 </html>
